@@ -28,6 +28,7 @@ Parsing: pandas, pdfplumber
 
 Database: SQLite (default)
 
+
 Setup Instructions
 1. Clone the repo
 git clone [https://github.com/Ayushkumar2028/your-repo.git](https://github.com/Ayushkumar2028/FileParser_NITRO.git) 
@@ -81,7 +82,6 @@ GET /files/<file_id>/content/
 
 DELETE /files/<file_id>/delete/
 
-
 Notes
 
 Uploaded files are stored in media/uploads/.
@@ -89,3 +89,37 @@ Uploaded files are stored in media/uploads/.
 Temporary chunks go into media/tmp/.
 
 Background parsing is done using Python threads for async.
+
+
+Testing :You can test all APIs using Postman
+1. Upload File (Chunked)
+
+    Method: POST
+
+    URL: http://127.0.0.1:8000/files
+
+    Body: form-data
+
+2. Get All Files
+
+    Method: GET
+
+    URL: http://127.0.0.1:8000/files/
+
+3. Track Upload/Processing Progress
+
+    Method: GET
+
+    URL: http://127.0.0.1:8000/files/<file_id>/progress/
+
+4. Get Parsed File Content
+
+   Method: GET
+
+    URL: http://127.0.0.1:8000/files/<file_id>/content/
+
+5.Delete File
+
+   Method: DELETE
+
+   URL: http://127.0.0.1:8000/files/<file_id>/delete/
