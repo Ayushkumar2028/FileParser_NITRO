@@ -91,7 +91,8 @@ Temporary chunks go into media/tmp/.
 Background parsing is done using Python threads for async.
 
 
-# Testing :You can test all APIs using Postman
+# Testing :
+You can test all APIs using Postman
 1. Upload File (Chunked)
 
     Method: POST
