@@ -1,4 +1,4 @@
-File Upload & Parsing API :
+## File Upload & Parsing API :
 
 This project is a Django REST API that allows you to upload large files in chunks, track upload progress, parse file content (CSV, Excel, PDF), and manage uploaded files.
 
@@ -20,7 +20,7 @@ PDF → Extracted text per page
 
 ❌ Delete uploaded files
 
-Tech Stack :
+# Tech Stack :
 
 Backend: Django, Django REST Framework
 
@@ -29,7 +29,7 @@ Parsing: pandas, pdfplumber
 Database: SQLite (default)
 
 
-Setup Instructions
+# Setup Instructions
 1. Clone the repo
 git clone [https://github.com/Ayushkumar2028/your-repo.git](https://github.com/Ayushkumar2028/FileParser_NITRO.git) 
 cd your-repo
@@ -40,10 +40,9 @@ Install the required libraries :
 
     pip install django djangorestframework pandas pdfplumber openpyxl xlrd
 
+  # Notes:
 
-  Notes:
-
-    openpyxl is required for reading .xlsx Excel files.
+   openpyxl is required for reading .xlsx Excel files.
 
   -> xlrd is required for reading .xls Excel files.
 
@@ -57,7 +56,8 @@ Install the required libraries :
 4. Start the server
 python manage.py runserver
 
-API Endpoints
+
+# API Endpoints
 1. Upload File 
 
 POST /files/
@@ -82,7 +82,7 @@ GET /files/<file_id>/content/
 
 DELETE /files/<file_id>/delete/
 
-Notes
+# Notes
 
 Uploaded files are stored in media/uploads/.
 
@@ -91,7 +91,7 @@ Temporary chunks go into media/tmp/.
 Background parsing is done using Python threads for async.
 
 
-Testing :You can test all APIs using Postman
+# Testing :You can test all APIs using Postman
 1. Upload File (Chunked)
 
     Method: POST
