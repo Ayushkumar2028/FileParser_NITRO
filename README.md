@@ -123,3 +123,6 @@ Testing :You can test all APIs using Postman
    Method: DELETE
 
    URL: http://127.0.0.1:8000/files/<file_id>/delete/
+
+## Postman Collection
+[Download the Postman Collection](API%20documentation.postman_collection.json) 
