@@ -119,9 +119,9 @@ You can test all APIs using Postman
 
     URL: http://127.0.0.1:8000/files/<file_id>/content/
 
-5.Delete File
+ 5.Delete File
 
-   Method: DELETE
+  Method: DELETE
 
    URL: http://127.0.0.1:8000/files/<file_id>/delete/
 
